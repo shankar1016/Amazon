@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone_project') {
             steps {
-                git branch: 'main', url: 'https://github.com/shankar1016/Amazon.git'
+                git branch: 'master', url: 'https://github.com/shankar1016/Amazon.git'
             }
         }
 
