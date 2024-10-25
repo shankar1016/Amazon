@@ -10,7 +10,7 @@ pipeline {
 
         stage('compile') {
             steps {
-                dir ('SKY') {
+                dir ('SpringCore') {
                 sh 'mvn compile'
             }
         }
@@ -18,7 +18,7 @@ pipeline {
 
         stage('test') {
             steps {
-                dir ('SKY') {
+                dir ('SpringCore') {
                 sh 'mvn test'
             }
         }
@@ -26,7 +26,7 @@ pipeline {
 
         stage('build') {
             steps {
-                dir ('SKY') {
+                dir ('SpringCore') {
                 sh 'mvn clean install'
             }
         }
