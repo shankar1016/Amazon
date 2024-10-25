@@ -10,7 +10,7 @@ pipeline {
 
         stage('compile') {
             steps {
-                dir ('Amazon') {
+                dir ('SKY') {
                 sh 'mvn compile'
             }
         }
@@ -18,7 +18,7 @@ pipeline {
 
         stage('test') {
             steps {
-                dir ('Amazon') {
+                dir ('SKY') {
                 sh 'mvn test'
             }
         }
@@ -26,7 +26,7 @@ pipeline {
 
         stage('build') {
             steps {
-                dir ('Amazon') {
+                dir ('SKY') {
                 sh 'mvn clean install'
             }
         }
